@@ -239,18 +239,6 @@
 	<div style="clear:left; margin:10px">
 		<p>				
 			<button class="button" onclick="insert_picture('<?PHP echo $image_url; ?>','<?PHP echo $wpdb->insert_id; ?>')"> Insert into Post</button> 
-			<?PHP
-			
-				/**
-				* Set thumbnail
-				*/
-								
-				$ajax_nonce = wp_create_nonce( "set_post_thumbnail-" . $_POST['post_edited'] );
-				$thumbnail = "<button class=\"button\" id='wp-post-thumbnail-" . $picture_post_id . "' href='#' onclick='WPSetAsThumbnail(\"$picture_post_id\", \"$ajax_nonce\");return false;'>" . esc_html__( "Use as featured image" ) . "</button>";
-				
-				echo $thumbnail;
-						
-			?>
 		</p> 	 
 	</div>
 </body>

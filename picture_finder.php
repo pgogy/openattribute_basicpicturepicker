@@ -3,7 +3,7 @@
 	/**
 	* Picture Finder
 	* @package Picture_finder
-	* @version 1.0
+	* @version 0.92
 	* @author Triton project, University of Oxford
 	*/
 
@@ -76,7 +76,7 @@
 					'privacy_filter'	=> 1,
 					'license'		=> '4%2C7',
 					'text'		=> $search_term,
-					'api_key'	=> '728ee0bc70c3fc45c03790b209889847',
+					'api_key'	=> '96990460a0675f30f3f7d4205672dce3',
 					'method'	=> 'flickr.photos.search',
 					'format'	=> 'php_serial'
 				);
