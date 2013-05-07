@@ -152,6 +152,12 @@
 		$author = $rsp_obj['photo']['owner']['realname'];
 	
 	}
+	
+	if($author==""){
+	
+		$author = $rsp_obj['photo']['notes']['note']['authorname'];
+	
+	}
 		
 	$attrib_url = "farm" . $pic['farm'] . ".static.flickr.com/" . $pic['server'] . "/" . $pic['id'] . "_" . $pic['secret'] . ".jpg";
 
