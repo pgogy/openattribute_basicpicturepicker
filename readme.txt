@@ -2,8 +2,8 @@
 Contributors: OpenAttribute, pgogy
 Tags: flickr, picture, attribution, author, picture, find, use, creative commons, cc, licensing
 Requires at least: 3
-Tested up to: 3.5.1
-Stable tag: 0.95
+Tested up to: 4.5
+Stable tag: 0.96
 
 This plugin is built for people keen to reuse flickr images in their blogs. 
 

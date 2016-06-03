@@ -3,7 +3,7 @@
 	/**
 	* Picture Finder
 	* @package Picture_finder
-	* @version 0.92
+	* @version 0.96
 	* @author Triton project, University of Oxford
 	*/
 
@@ -14,7 +14,7 @@
 
 	include "../../../wp-admin/admin.php";
 
-	$home_url = get_bloginfo("siteurl");  	
+	$home_url = site_url();  	
 	
 	/**
 	* Second page of code for the iframe to deal with choosing the picture to use
@@ -93,7 +93,7 @@
 				* Go to FlickR to get pictures
 				*/
 
-				$url = "http://api.flickr.com/services/rest/?".implode('&', $encoded_params);
+				$url = "https://api.flickr.com/services/rest/?".implode('&', $encoded_params);
 
 				$rsp = file_get_contents($url);
 				

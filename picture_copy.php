@@ -133,7 +133,7 @@
 	* call the API and decode the response
 	*/
 
-	$url = "http://api.flickr.com/services/rest/?".implode('&', $encoded_params);
+	$url = "https://api.flickr.com/services/rest/?".implode('&', $encoded_params);
 
 	$rsp = file_get_contents($url);
 	
@@ -165,7 +165,7 @@
 	* Get the picture from Flickr for processing
 	*/
 			
-	$img = file_get_contents("http://farm" . $pic['farm'] . ".static.flickr.com/" . $pic['server'] . "/" . $pic['id'] . "_" . $pic['secret'] . ".jpg");
+	$img = file_get_contents("https://farm" . $pic['farm'] . ".static.flickr.com/" . $pic['server'] . "/" . $pic['id'] . "_" . $pic['secret'] . ".jpg");
 	
 	file_put_contents($_POST['upload'] . "/" . $pic['id'] . "_" . $pic['secret'] . ".jpg", $img);
 	
